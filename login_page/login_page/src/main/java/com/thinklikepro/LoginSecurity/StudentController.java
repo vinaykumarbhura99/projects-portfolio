@@ -1,6 +1,7 @@
 package com.thinklikepro.LoginSecurity;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,10 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StudentController {
 	
-	List<Student> student=new ArrayList<>(List.of(
-			new Student(1,"anil",70),
-			new Student(2,"sunny",75)
-			));
+	List<Student> student=new ArrayList<>(Arrays.asList(
+            new Student(1, "anil", 70),
+            new Student(2, "sunny", 75)
+    ));
 	
 	
 	@GetMapping("/student")
